@@ -408,7 +408,7 @@ float: left;
 display: inline-block;
 overflow: hidden;
 width: 253px;
-margin-top: 350px;
+margin-top: 420px;
 margin-left: -297px;
 padding-left: 0px;
 background-color: white;
@@ -432,7 +432,7 @@ width: 100%;
 	display: inline-block;
 	float:left;
 	padding-left:145px;
-	margin-top: 50px;
+	margin-top: 105px;
 	margin-right: 25px;
 	height: 225px;
 	width: 250px;
@@ -842,7 +842,7 @@ p.nocomments {
 	text-align: left;
 	line-height: 1.8;
 	margin: 0 0 1.5em;
-	padding-top: 0px;
+	padding-top: 40px;
 
 }
 .widget-title {
