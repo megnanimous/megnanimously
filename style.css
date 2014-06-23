@@ -390,7 +390,7 @@ a:active {
 #primary { /*Entire area encompassing the content, sets the width of the area for content*/
 float: left;
 margin-left:20px;
-margin-top: 300px;
+margin-top: 410px;
 width: 900px;
 }
 #content { /*Textarea for blog posts*/
@@ -489,7 +489,7 @@ html, body {
     width: 950px;
     padding: 1em;
     background-color: white;
-    margin-top:150px;
+    margin-top:210px;
     margin-left: 40px;
     border-left: 2px dashed #CCCCCC;
     border-right: 2px dashed #CCCCCC;
