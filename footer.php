@@ -1,28 +1,25 @@
 <?php
 /**
-* The template for displaying the footer.
-*
-* Contains the closing of the id=main div and all content after
-*
-* @package Shape
-* @since Shape 1.0
-*/
+ * The template for displaying the footer.
+ *
+ * Contains the closing of the #content div and all content after
+ *
+ * @package _s
+ */
 ?>
- 
-</div><!-- #main .site-main -->
 
-<footer id="colophon" class="site-footer" role="contentinfo">
-    <div class="site-info">
-        <?php do_action( 'shape_credits' ); ?>
-        <a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'shape' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'shape' ), 'WordPress' ); ?></a>
-        <span class="sep"> | </span>
-        <?php printf( __( 'Theme: %1$s by %2$s.', 'shape' ), 'Shape', '<a href="http://www.megnanimously.wordpress.com" rel="designer">Megnanimous</a>' ); ?>
+	</div><!-- #content -->
 
-    </div><!-- .site-info -->
-</footer><!-- #colophon .site-footer -->
-</div><!-- #page .hfeed .site -->
- 
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+			<a href="<?php echo esc_url( __( 'http://wordpress.org/', '_s' ) ); ?>"><?php printf( __( 'Proudly powered by %s', '_s' ), 'WordPress' ); ?></a>
+			<span class="sep"> | </span>
+			<?php printf( __( 'Theme created by Meg_nanimous, based on %1$s by %2$s.', '_s' ), '_s', '<a href="http://automattic.com/" rel="designer">Automattic</a>' ); ?>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
 <?php wp_footer(); ?>
- 
+
 </body>
 </html>

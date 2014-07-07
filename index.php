@@ -8,40 +8,39 @@
  * E.g., it puts together the home page when no home.php file exists.
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package Shape
- * @since Shape 1.0
+ * @package _s
  */
- 
+
 get_header(); ?>
 
-<?php get_header(); ?>
-<div id="primary" class="content-area">
-               <div id="content" class="site-content" role="main">
-					<?php if ( have_posts() ) : ?>
-					
-<!-- 					<?php shape_content_nav( 'nav-above' ); ?>
- 				     
-				     <?php /* Start the Loop */ ?>
-				     <?php while ( have_posts() ) : the_post(); ?>
-				 
-				          <?php
-				          /* Include the Post-Format-specific template for the content.
-				          * If you want to overload this in a child theme then include a file
-				          * called content-___.php (where ___ is the Post Format name) and    that will be used instead.
-				          */
-				          get_template_part( 'content', get_post_format() );
-				          ?>
-				     <?php endwhile; ?>
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
-				     <?php shape_content_nav( 'nav-below' ); ?>
+		<?php if ( have_posts() ) : ?>
 
-				     <?php else : ?>
-					     <?php get_template_part( 'no-results', 'index' ); ?>
+			<?php /* Start the Loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php endif; ?>
+				<?php
+					/* Include the Post-Format-specific template for the content.
+					 * If you want to override this in a child theme, then include a file
+					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+					 */
+					get_template_part( 'content', get_post_format() );
+				?>
 
-				<!-- #content .site-content -->
-          <!-- #primary .content-area -->
+			<?php endwhile; ?>
 
-<!--<?php get_sidebar(); ?> -->
+			<?php _s_paging_nav(); ?>
+
+		<?php else : ?>
+
+			<?php get_template_part( 'content', 'none' ); ?>
+
+		<?php endif; ?>
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
