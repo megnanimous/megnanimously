@@ -36,19 +36,26 @@
                 <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
             </a>
         </div>
+
 <?php } // if ( ! empty( $header_image ) )
 ?>
 
 <!-- <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main"> -->
 
-<nav id="site-navigation" class="main-navigation" role="navigation">
+<!-- <nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle"><?php _e( 'Primary Menu', '_s' ); ?></button>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+		</nav><!-- #site-navigation --> 
+
+		
+	</header><!-- #masthead -->
+
+	<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle"><?php _e( 'Primary Menu', '_s' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #site-navigation -->
 
-		
-	</header><!-- #masthead -->
 	
 	<div id="content" class="site-content">
 

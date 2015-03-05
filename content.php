@@ -11,9 +11,20 @@
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php _s_posted_on(); ?>
-		</div><!-- .entry-meta -->
+<!-- .entry-meta -->
 		<?php endif; ?>
-	</header><!-- .entry-header -->
+		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
+			<?php
+				/* translators: used between list items, there is a space after the comma */
+				$categories_list = get_the_category_list( __( ', ', '_s' ) );
+				if ( $categories_list && _s_categorized_blog() ) :
+			?>
+			<span class="cat-links">
+				<?php printf( __( '%1$s', '_s' ), $categories_list ); ?>
+			</span>
+			<?php endif; // End if categories ?>
+			</div>
+		</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', '_s' ) ); ?>
@@ -26,16 +37,7 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
-			<?php
-				/* translators: used between list items, there is a space after the comma */
-				$categories_list = get_the_category_list( __( ', ', '_s' ) );
-				if ( $categories_list && _s_categorized_blog() ) :
-			?>
-			<span class="cat-links">
-				<?php printf( __( 'Posted in %1$s', '_s' ), $categories_list ); ?>
-			</span>
-			<?php endif; // End if categories ?>
+		
 
 			<?php
 				/* translators: used between list items, there is a space after the comma */
