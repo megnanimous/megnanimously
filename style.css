@@ -374,7 +374,12 @@ a:active {
 	
 }
 
+#thsp-sticky-header {
+	height: 50px;
+	background-color: #e6e6e6;
+	box-shadow: 0px 1px 5px #888888;
 
+}
 
 #site-navigation {
 	float: left;
@@ -382,9 +387,10 @@ a:active {
 	padding-left: 20%;
 	padding-top: 5px;
 	width: 100%;
-	height: 30px;
+	height: 50px;
 	background-color: #e6e6e6;
-	
+	position: fixed;
+	box-shadow: 0px 1px 5px #888888;	
 }
 
 #site-navigation-index {
@@ -495,6 +501,20 @@ text-align: center;
 }
 
 /* Navigation - Pages */
+
+#thsp-sticky-header a {
+	font-family: "Gill Sans";
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+#thsp-sticky-header li a {
+	font-family: Georgia;
+	font-size: 12px;
+}
+
+
+
 .main-navigation {
 	clear: both;
 	width: 100%;
@@ -550,7 +570,7 @@ text-align: center;
 .main-navigation .current-menu-item a {
 }
 
-/*Sticky Header*/
+/* Sticky Header */
 
 #thsp-sticky-header a {
 	font-family: "Gill Sans";
