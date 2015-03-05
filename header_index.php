@@ -23,9 +23,13 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', '_s' ); ?></a>
 
-	<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Primary Menu', '_s' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+	<nav id="site-navigation">
+		<div id="transparency"></div>
+			<div id="logo"><h1>Megnanimously</h1></div>
+			<div id="nav-links" class="main-navigation" role="navigation">
+				<button class="menu-toggle"><?php _e( 'Primary Menu', '_s' ); ?></button>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			</div>
 		</nav><!-- #site-navigation -->
 
 	<header id="masthead" class="site-header" role="banner">
