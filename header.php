@@ -27,8 +27,6 @@
 		<div id="transparency"></div>
 		<a href="http://www.megnanimously.com"><div id="logo"></div></a>
 		<div id="nav-links" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Primary Menu', '_s' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</div>
 		</nav><!-- #site-navigation -->
 

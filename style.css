@@ -390,6 +390,18 @@ a:active {
 	
 }
 
+#tagline {
+	float: right;
+	position: absolute;
+	font-family: "Gill Sans";
+	color: #ffffff;
+	font-size: 10px;
+	width: 400px;
+	height: 100px;
+	border: 1px solid yellow;
+
+}
+
 #transparency {
 	display: inline;
 	position: absolute;
@@ -397,7 +409,7 @@ a:active {
 	opacity: 0.7;
 	height: 50px;
 	width: 100%;
-	z-index: 0;
+	z-index: -1;
 }
 
 #site-navigation {
@@ -559,13 +571,14 @@ padding-top: 10px;
 }
 @media screen and (max-width: 800px) {
 	.menu-toggle,
-	.main-navigation.toggled .nav-menu {
+	.main-navigation .toggled .nav-menu {
 		display: block;
 	}
 
 	.main-navigation ul {
 		display: none;
 	}
+
 	#page {
 		max-width: 800px;
 	}
@@ -585,10 +598,9 @@ padding-top: 10px;
 }
 @media screen and (max-width: 600px) {
 	.menu-toggle,
-	.main-navigation.toggled .nav-menu {
+	.main-navigation .nav-menu {
 		display: block;
 	}
-
 	.main-navigation ul {
 		display: none;
 	}
@@ -630,9 +642,6 @@ padding-top: 10px;
 	#content {
 		max-width: 600px;
 	}
-	#masthead {
-		background-image: url('sunset_logo_sm.jpg');
-	}
 }
 @media screen and (max-width: 350px) {
 	.menu-toggle,
@@ -656,9 +665,6 @@ padding-top: 10px;
 	}
 	#content {
 		max-width: 600px;
-	}
-	#masthead {
-		background-image: url('sunset_logo_sm.jpg');
 	}
 }
 .site-main .comment-navigation,
