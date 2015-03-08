@@ -15,6 +15,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+
 <?php wp_head(); ?>
 </head>
 
@@ -25,7 +26,7 @@
 
 	<nav id="site-navigation">
 		<div id="transparency"></div>
-			<div id="logo"><h1>Megnanimously</h1></div>
+			<a href="http://www.megnanimously.com"><div id="logo"></div></a>
 			<div id="nav-links" class="main-navigation" role="navigation">
 				<button class="menu-toggle"><?php _e( 'Primary Menu', '_s' ); ?></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
@@ -49,13 +50,6 @@
 <?php } // if ( ! empty( $header_image ) )
 ?>
 
-<!-- <div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main"> -->
-
-<!-- <nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Primary Menu', '_s' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation --> 
 
 		
 	</header><!-- #masthead -->

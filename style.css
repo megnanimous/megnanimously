@@ -1,5 +1,5 @@
 /*
-Theme Name: Megnanimously 3.0
+Theme Name: Megnanimously 4.0 - 2015
 Theme URI: http://www.megnanimously.com
 Author: Meg_nanimous
 Author URI: http://www.megnanimously.com
@@ -133,6 +133,21 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
+
+h1 {
+	clear: both;
+	font-family: "Gill Sans";
+	font-size: 25px;
+	color: #000000;
+}
+
+h2 {
+	clear: both;
+	font-family: "Gill Sans";
+	font-size: 18px;
+	color: #000000;
+}
+
 p {
 	margin-bottom: 1.5em;
 }
@@ -340,15 +355,15 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-	color: #5EC9AF;
+	color: #5A94AD;
 }
 a:visited {
-	color: black;
+	color: #484848;
 }
 a:hover,
 a:focus,
 a:active {
-	color: black;
+	color: #5A94AD;
 }
 
 /* =Structure
@@ -366,8 +381,8 @@ a:active {
 	width: 100%;
 	margin: auto;
 	margin-top: 0px;
-	height: 500px;
-	background-image: url('blog_030415_33.jpg');
+	height: 700px;
+	background-image: url('sunset_logo.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
@@ -378,7 +393,7 @@ a:active {
 	display: inline;
 	position: absolute;
 	background-color: #ffffff;
-	opacity: 0.9;
+	opacity: 0.7;
 	height: 50px;
 	width: 100%;
 	z-index: 0;
@@ -397,10 +412,12 @@ a:active {
 }
 
 #logo {
+	background-image: url('headerlogo.png');
+	background-size: cover;
+	background-position: top left;
 	height: 50px;
-	width: 200px;
-	border: 1px solid purple;
-	margin-top: 0;
+	width: 50px;
+	margin-left: 10px;
 	display: table-cell;
 	position: absolute;
 	z-index: 1;
@@ -421,9 +438,9 @@ a:active {
 #primary {
 float: left;
 margin-top: 70px;
-margin-left: 50px;
+margin-left: 90px;
 width: 50%;
-min-width: 800px;
+/*min-width: 800px;*/
 }
 #content {
 margin: auto;
@@ -446,12 +463,23 @@ background: #e6e6e6;
 font-family: Georgia;
 font-size: 14px;
 text-align: center;
+height: 80px;
+padding-top: 10px;
 }
-.site-footer a{
+
+.site-footer a {
 	color: black;
 	text-decoration: none;
 }
 
+#footerlogo {
+	background-image: url('headerlogo.png');
+	background-size: cover;
+	background-position: top left;
+	height: 40px;
+	width: 40px;
+	margin: auto;
+}
 
 }
 
@@ -501,10 +529,16 @@ text-align: center;
 .main-navigation ul ul li {
 }
 .main-navigation li:hover > a {
+	color: #5A94AD;
+}
+.main-navigation ul:active > a {
+	color: #5A94AD;
 }
 .main-navigation ul ul :hover > a {
+	color: #5A94AD;
 }
 .main-navigation ul ul a:hover {
+	color: #5A94AD;
 }
 .main-navigation ul li:hover > ul {
 	left: auto;
@@ -516,22 +550,6 @@ text-align: center;
 .main-navigation .current-menu-item a {
 }
 
-/* Sticky Header */
-
-#thsp-sticky-header a {
-	font-family: "Gill Sans";
-	font-size: 18px;
-	text-transform: uppercase;
-}
-
-#thsp-sticky-header li a {
-	font-family: Georgia;
-	font-size: 12px;
-}
-
-#thsp-sticky-header {
-	box-shadow: 0px 1px 5px #888888;
-}
 
 /* Small menu */
 
@@ -683,6 +701,14 @@ text-align: center;
 	font-size: 1em;
 }
 
+.widget a:visited {
+	color: #8C8C8C;
+}
+
+.widget a:hover {
+	color: #5A94AD;
+}
+
 .widget_categories ul{
 	font-size: 1.3em;
 	list-style: none;
@@ -741,18 +767,21 @@ text-align: center;
 	font-family: "Gill Sans";
 	font-size: 35px;
 	text-align: center;
+	font-weight: bold;
 }
 .entry-title a {
 	color: #000000;
 	text-decoration: none;
 }
 .entry-meta {
-	font-size: 10px;
+	font-size: 12px;
 	color: black;
 	text-align: center;
+	letter-spacing: 2px;
+	padding-top: 10px;
 }
 .entry-meta .posted-on a{
-	color: black;
+	color: #5A94AD;
 	text-decoration: none;
 	font-style: italic;
 	border-right: 1px solid black;
@@ -763,6 +792,7 @@ text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
 	padding-left: 4px;
+	color: #5A94AD;
 }
 .entry-footer {
 	font-size: 12px;
@@ -773,6 +803,19 @@ text-align: center;
 }
 .entry-footer a{
 	color: #000000;
+}
+
+.page-header h1 {
+	font-family: Georgia;
+	font-size: 45px;
+	font-style: italic;
+	width: 100%;
+	padding-left: 5px;
+	border-bottom: 1px solid #8c8c8c;
+}
+
+.entry-header {
+	margin-top: 70px;
 }
 
 /*--------------------------------------------------------------
