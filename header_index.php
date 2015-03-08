@@ -28,11 +28,11 @@
 		<div id="transparency"></div>
 			<a href="http://www.megnanimously.com"><div id="logo"></div></a>
 			<div id="nav-links" class="main-navigation" role="navigation">
+			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</div>
 		</nav><!-- #site-navigation -->
 
 	<header id="masthead" class="site-header" role="banner">
-<!-- 		<div id="tagline">the adventures of an American expat in Berlin</div> -->
 		<div class="site-branding" align="center">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
