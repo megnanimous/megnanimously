@@ -569,12 +569,15 @@ padding-top: 10px;
 .menu-toggle {
 	display: none;
 }
-@media screen and (max-width: 800px) {
-	.menu-toggle,
-	.main-navigation .toggled .nav-menu {
-		display: block;
-	}
+.menu-toggle,
+.main-navigation .toggled .nav-menu {
+	display: block;
+	background: rgba(255, 255, 255,0.7);
+}
 
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 800px) {
 	.main-navigation ul {
 		display: none;
 	}
